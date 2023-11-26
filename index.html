@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <script
+      src="https://kit.fontawesome.com/fdb4921de5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-container">
+        <div class="search">
+          <input
+            id="input"
+            class="search-input"
+            type="text"
+            placeholder="Enter City Name"
+            spellcheck="false"
+          />
+          <button class="search-btn" id="btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="weather-info">
+          <div>
+            <img src="clouds.png" class="temp-img" id="tempicon" />
+          </div>
+          <h1 class="temp" id="temp">22°c</h1>
+          <h3 class="city-name" id="cityname">New York</h3>
+        </div>
+        <div class="columns">
+          <div class="col1">
+            <div class="img">
+              <img src="humidity.png" class="wind-img" />
+            </div>
+            <div class="humidity-container">
+              <h5 class="humidity" id="humidity">34%</h5>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col1">
+            <div class="img">
+              <img src="wind.png" class="wind-img" />
+            </div>
+            <div class="windspeed-container">
+              <h5 id="wind" class="wind">2.57 Km/h</h5>
+              <p>wind speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
